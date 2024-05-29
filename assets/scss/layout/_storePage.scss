@@ -1,0 +1,305 @@
+@use "../util" as u;
+@use "../global" as g;
+
+.promotion-banner {
+  @include g.regular-fw(14px);
+  
+}
+
+.store-location-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-page {
+  background-color: var(--nav-background-opened-light);
+}
+.page-heading {
+  padding: 90px;
+}
+
+.shop-header {
+  @include g.headline-medium(--headline-text-dark);
+}
+
+.shop-subhead {
+  @include g.headline-medium(--shop-subhead);
+}
+
+.shop-contact {
+  font-size: 14px;
+}
+
+.shelf-title {
+  margin-left: 140px !important;
+}
+
+.category-card {
+  background-color: var(--nav-background-opened-light);
+  overflow: hidden;
+  border-radius: 18px;
+  height: 148px;
+  min-width: 136px;
+  width: 136px !important;
+  overflow: hidden;
+  padding: 18px 8px 16px;
+
+  img {
+  width: auto;
+  max-height: 78px;
+  // margin: 0 auto;
+  }
+
+  p {
+    color: #1d1d1f;
+    font: 14px;
+    font-weight: 600;
+    text-wrap: nowrap;
+  }
+}
+
+/*---------------------------------------
+Shefl2
+---------------------------------------*/
+.shelf-title {
+  // display: inline;
+  font-size: 28px;
+  font-weight: 600;
+  h3 {
+    color: var(--headline-text-dark);
+  }
+  span {
+    color: #6e6e73;
+  }
+}
+
+
+.latest-product-card , .card-store-specialStore{
+  width: 400px !important;
+}
+
+.accessories-product-card , .personalization-product-card{
+  width: 300px !important;
+}
+
+.message-product-card{
+  width: 300px !important;
+  height: 16rem !important;
+  .product-card {
+    height: 15rem;
+    padding: 5px;
+  }
+}
+
+.product-card {
+  // height: 10px;
+  // width: 400px;
+
+  .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .product-title-light{
+    color: #fff !important;
+  }
+
+  .product-link-dark {
+    text-decoration: none;
+    @include g.subhead(--headline-text-dark);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .product-link-light {
+    text-decoration: none;
+    @include g.subhead(--headline-text-light);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .product-price {
+    font-size: 17px;
+    font-weight: 400;
+
+    &.light{
+      color: #fff !important;
+    }
+    b {
+      font-weight: 400;
+    }
+
+    sup {
+      font-size: 12px;
+      vertical-align: baseline;
+      position: relative;
+    }
+  }
+}
+
+.card-store-help ,.card-store-appleExperience{
+  width: 480px !important;
+}
+
+.quick-link:hover {
+  color: #fff !important;
+}
+
+// start find-store
+
+.search-store {
+  background-color: #f2f2f2;
+
+  .store-searchbar {
+    height: 5rem;
+    background-color: var(--color-light);
+
+    img {
+      top: 40px;
+      left: 15px;
+      transform: translateY(-50%);
+    }
+
+    input {
+      padding: 0 60px;
+      height: 38px;
+      border-radius: 12px;
+      // border-color: #86868b;
+      font-size: 17px;
+      font-weight: 400;
+      border: 1px solid #86868b;
+      width: 100%;
+    }
+
+    .store-list {
+      font-size: 14px;
+      color: var(--text-primary);
+      font-weight: 300;
+    }
+  }
+
+  .headline {
+    @include g.headline-small(var(--headline-text-dark));
+  }
+
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  .angle {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+
+  .angle:active {
+    transform: translateY(-50%) scale(0.85);
+  }
+
+  .angle:first-child {
+    left: -70px;
+  }
+
+  .angle:last-child {
+    right: -50px;
+  }
+
+  .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    // overflow: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    .dragging {
+      scroll-snap-type: none;
+      scroll-behavior: auto;
+
+      .card {
+        cursor: grab;
+        user-select: none;
+      }
+    }
+
+    .card {
+      scroll-snap-align: start;
+      height: 342px;
+      width: 300px;
+      list-style: none;
+      background: #fff;
+      cursor: pointer;
+      padding-bottom: 15px;
+      flex-direction: column;
+      border-radius: 8px;
+
+      img {
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 1.56rem;
+        margin: 30px 0 5px;
+      }
+
+      span {
+        color: #6a6d78;
+        font-size: 1.31rem;
+      }
+    }
+  }
+
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+  .program-card-content {
+    background-color: #fff;
+    padding: 30px;
+  }
+}
+
+
+.test {
+  @include u.breakpoint-down(medium) {
+    background-color: hsl(120, 100%, 16%);
+  }
+}

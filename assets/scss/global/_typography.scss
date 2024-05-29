@@ -1,0 +1,58 @@
+@use '../util' as u;
+
+// $heading-large : 56px;
+// $heading-medium : 48px;
+// $heading-small : 40px;
+
+
+@mixin headline-large($color){
+  font-size: 56px;
+  font-weight: 600;
+  font-family: u.$font;
+  color: var($color);
+}
+
+@mixin headline-medium($color){
+  font-size: 48px;
+  font-weight: 600;
+  font-family: u.$font;
+  color: var($color);
+}
+
+@mixin headline-small($color){
+  font-size: 40px;
+  font-weight: 600;
+  font-family: u.$font;
+  color: var($color);
+}
+
+@mixin subhead($color){
+  font-size: 28px;
+  font-weight: 200;
+  font-family: u.$font;
+  color: var($color);
+}
+
+@mixin small-text(){
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@mixin regular-fw($fs){
+  font-size: $fs;
+  font-weight: 400;
+}
+
+@mixin medium-fw($fs){
+  font-size: $fs;
+  font-weight: 500;
+}
+
+@mixin semiBold-fw($fs){
+  font-size: $fs;
+  font-weight: 600;
+}
+
+
+
+

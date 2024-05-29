@@ -1,0 +1,259 @@
+@use "../util" as u;
+@use "../global" as g;
+
+// a:hover {
+//   text-decoration: underline !important;
+//   color: var(--text-link); 
+// }
+
+
+.support-container {
+  width: 692px;
+  // margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @include u.breakpoint(xlarge) {
+    width: 980px;
+  }
+
+  @include u.breakpoint-down(xsmall) {
+    width: 87.5%;
+  }
+}
+
+/*---------------------------------------
+support hero banner 
+---------------------------------------*/
+.support-banner {
+  .banner-img-wrapper {
+    @include u.image-background(
+      "../assets/images/support-page/hero-banner-homepage.image.large_2x.jpg",
+      100%,
+      540px
+    );
+    position: relative;
+    // width: 100%;
+    // height: auto;
+  }
+}
+
+/*---------------------------------------
+Apple Support
+---------------------------------------*/
+.title {
+  margin-top: 68px;
+}
+
+.heading-lg {
+  text-wrap: no;
+  font-size: 48px;
+  font-weight: 600;
+
+  @include u.breakpoint-down(xsmall) {
+    font-size: 40px;
+  }
+
+  @include u.breakpoint(xlarge) {
+    font-size: 64px;
+  }
+}
+
+.apple-categories {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 54px;
+
+  @include u.breakpoint-down(large) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include u.breakpoint-down(xsmall) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 10px;
+    max-width: initial;
+    font-size: 12px;
+
+    .cat-link {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .cat-name {
+      color: var(--headline-text-dark) !important;
+    }
+  }
+}
+
+.support-cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 68px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+
+  .card {
+    border: none;
+    background: #f5f5f7;
+    border-radius: 18px;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.08);
+    padding: 30px 30px;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
+    grid-column: span 4;
+    overflow: hidden;
+
+    @include u.breakpoint-down(large) {
+      grid-column: span 6;
+    }
+
+    @include u.breakpoint-down(xsmall) {
+      grid-column: span 12;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-top: 16px;
+    }
+
+    .card-title a {
+      color: var(--text-link);
+      font-size: 17px;
+    }
+  }
+}
+
+/*---------------------------------------
+Search bar
+---------------------------------------*/
+.heading-sm {
+  @include g.headline-small(--headline-text-dark);
+
+  @include u.breakpoint-down(large) {
+    font-size: 32px;
+  }
+
+  @include u.breakpoint-down(xsmall) {
+    font-size: 28px;
+  }
+}
+
+.search-bar {
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+/*---------------------------------------
+Card Wrapper
+---------------------------------------*/
+.card-sup-wrapper {
+  border-radius: 18px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-light);
+  margin: 20px 0;
+
+  .card-sup-des {
+    padding: 40px 80px;
+
+    a {
+      color: var(--text-link);
+    }
+
+  }
+
+  .card-sup-img img {
+    width: 100%;
+    // height: 369px;
+    height: auto;
+    max-width: 980px;
+
+    @include u.breakpoint-down(xsmall) {
+      max-width: 480px;
+      // height: 100%;
+    }
+  }
+}
+
+.section-bg {
+  background-color: var(--color-gray);
+  // margin-top: 54px;
+
+  .youtube-support {
+    padding: 10px 0;
+  }
+}
+
+.full-card-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+  text-align: center;
+
+  .card-border {
+    border-radius: 0;
+  }
+
+  .large-span-8 {
+    grid-column: span 8;
+  }
+
+  .large-span-4 {
+    grid-column: span 4;
+  }
+
+  .medium-span-6 {
+    @include u.breakpoint-down(large) {
+      grid-column: span 6;
+    }
+  }
+
+  .small-span-12 {
+    @include u.breakpoint-down(xsmall) {
+      grid-column: span 12;
+    }
+  }
+
+  .card-padding-lg {
+    padding: 40px 50px;
+  }
+
+  .card-padding-sm {
+    padding: 40px 25px;
+  }
+
+  .img-card1 img {
+    width: 1440px;
+    max-width: 100%;
+    height: 300px;
+
+    @include u.breakpoint-down(large) {
+      max-width: 100%;
+    }
+
+    @include u.breakpoint-down(xsmall) {
+      width: 734px;
+    }
+  }
+}
+
+.support-link {
+  padding: 68px 0;
+  a{
+    color: var(--text-link);
+  }
+}

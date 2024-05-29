@@ -1,0 +1,7 @@
+@use '../util' as u;
+
+.grid{
+  display: grid;
+  grid-template-rows: auto;
+  // grid-template-columns: (1, 1fr);
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple-clone</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- start navbar -->
+    <my-navbar></my-navbar>
+    <!-- end navbar -->
+
+      <!-- start homepage main content -->
+      <main class="main">
+        <!-- --- start hero banner --- -->
+        <section class="homepage-section position-relative">
+  
+          <!-- Apple event banner -->
+          <div class="row g-0">
+            <div class="col-lg-12">
+              <div class="sub-hero-img apple-event">
+                <div class="product-content-bottom">
+                  <div class="heading-large-dark">
+                    <h2>Apple Event</h2>
+                  </div>
+                  <p class="subhead-large-dark">
+                    Watch online on 5/7 at 7 a.m.PT.
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4 fw-bold">
+                      Learn more
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Apple event banner -->
+  
+                
+  
+          <!-- iPhone 15 banner  -->
+          <div class="row g-0 mt-3">
+            <div class="col-lg-12">
+              <div class="sub-hero-img iphone15-pro">
+                <div class="product-content">
+                  <div class="heading-large-light">
+                    <h2>iPhone</h2>
+                  </div>
+                  <p class="subhead-large-light">
+                    Our most powerful cameras yet. <br/>Ultrafast chips. And USB-C.
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-outline-primary rounded-pill">Explore iPhone 15</div>
+                    <div class="btn btn-outline-primary rounded-pill">Explore iPhone 15 Pro</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- iPhone 15 banner  -->
+  
+            <!-- video banner  -->
+            <div class="row g-0 mt-3">
+            <div class="col-lg-12 bg-image-full">
+              <div class="apple-watch-video">
+                <video autoplay loop muted>
+                  <source
+                    src="./assets/images/homepage/xlarge.mp4"
+                    type="video/mp4" />
+                </video>
+                <div class="apple-watch-content">
+                  <!-- <h2 class="h2__light">watch</h2> -->
+                  <div class="heading">
+                    <img
+                      src="./assets/images/homepage/hero_logo_apple_watch_series_9__eg5xcrxghuaa_large_2x.png"
+                      alt="hero_logo_apple_watch_series_9__eg5xcrxghuaa_large_2x"
+                      width="190" />
+                  </div>
+                  <p class="subhead">
+                    Double tap. A magical new way to use Apple Watch
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-light large-btn rounded-pill py-2 px-4">Learn more</div>
+                    <div class="btn btn-outline-light rounded-pill py-2 px-4">Buy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- video banner  -->
+  
+  
+        </section>
+        <!-- --- end hero banner --- -->
+  
+        <!-- --- start sub-hero banner --- -->
+        <section class="homepage-section sub-hero-banner mt-2 position-relative container-fluid">
+          <div class="row g-2">
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-promotion-wrapper">
+                <div class="product-content">
+                  <div class="heading-small-dark">
+                    <h2>MacBook Air</h2>
+                  </div>
+                  <p class="subhead-dark">
+                    Lean. Mean. M3 machine.
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Learn more
+                    </div>
+                    <div class="btn btn-outline-primary rounded-pill py-2 px-4">
+                      Buy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-watch-wrapper">
+                <div class="product-content">
+                  <div class="heading-large-light">
+                    <img
+                      src="./assets/images/homepage/promo_logo_apple_watch_series_9__ckz0hbex0yeu_large_2x.png"
+                      alt="promo_logo_apple_watch_series_9"
+                      width="130" />
+                  </div>
+                  <p class="subhead-light">
+                    Smarter. Brighter. Mightier.
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Learn more
+                    </div>
+                    <div class="btn btn-outline-primary rounded-pill py-2 px-4">
+                      Buy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row g-2 mt-1">
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-ipad-wrapper">
+                <div class="product-content">
+                  <div class="heading-small-dark">
+                    <h2>iPad</h2>
+                  </div>
+                  <p class="subhead-dark">
+                    Lovable. Drawable. Magical
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Learn more
+                    </div>
+                    <div class="btn btn-outline-primary rounded-pill py-2 px-4">
+                      Buy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-airpodPro-wrapper">
+                <div class="product-content">
+                  <div class="heading-small-light">
+                    <h2>AirPods Pro</h2>
+                  </div>
+                  <p class="subhead-light">
+                    Adaptive Audio. Now playing
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Learn more
+                    </div>
+                    <div class="btn btn-outline-primary rounded-pill py-2 px-4">
+                      Buy
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2 mt-1">
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-card-wrapper">
+                <div class="product-content">
+                  <div class="heading-small-light">
+                    <img
+                      src="./assets/images/homepage/logo__dcojfwkzna2q_large.png"
+                      alt="promo_logo_apple_watch_series_9" />
+                  </div>
+                  <p class="subhead-dark mt-2">
+                    Get up to 3% Daily Cash back <br class="m-auto" /> with every purchase.
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Learn more
+                    </div>
+                    <div class="btn btn-outline-primary rounded-pill py-2 px-4">
+                      Apply now
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+              <div class="sub-hero-img img-tradeIn-wrapper">
+                <div class="product-content">
+                  <div class="heading-dark">
+                    <img
+                      src="./assets/images/homepage/logo_tradein__d1fpktgipvki_large.png"
+                      alt="promo_logo_apple_watch_series_9" />
+                  </div>
+                  <p class="subhead-dark mt-2 ">
+                    Get $180-$630 in credit when you <br/> trade in iPhone 11 or highher.<sup>1</sup>
+                  </p>
+                  <div class="group__btn">
+                    <div class="btn btn-primary rounded-pill py-2 px-4">
+                      Get your estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- --- end sub-hero banner --- -->
+  
+        <!-- start service section  -->
+        <section class="homepage-section infinite-auto-slide">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/417x236.jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (1).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (3).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (4).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (5).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (6).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (7).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (8).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (9).jpg"
+                  alt="image" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/homepage/thumb/1250x703 (8).jpg"
+                  alt="image" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- start service section  -->
+      </main>
+      <!-- start homepage main content -->
+
+
+
+          <!-- start footer  -->
+    <my-footer></my-footer>
+    <!-- end footer  -->
+
+    <!-- Bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/footer.js"></script>
+    
+  </body>
+</html>

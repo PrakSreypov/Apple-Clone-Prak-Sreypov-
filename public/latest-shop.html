@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Store Online - Apple</title>
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="../../dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start navbar -->
+    <my-navbar></my-navbar>
+    <!-- end navbar -->
+
+    <div class="promotion-banner d-flex justify-content-center p-4">
+      <p class="m-0">
+        Pay montly at 0% APR when you choose to check out with Apple Card Montly
+        Installments.*
+      </p>
+    </div>
+
+    <div class="store-page">
+      <div class="page-heading">
+        <div class="row justify-content-between align-items-center mx-auto">
+          <div class="col-8 g-0">
+            <h1 class="shop-header d-inline">
+              <span class="text-nowrap">Store.</span>
+            </h1>
+            <div class="shop-subhead d-inline">
+              The best way to buy the <br /><span class="text-nowrap"
+                >products you love.</span
+              >
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="shop-contact text-nowrap">
+              <div class="shop-chat d-flex pb-3">
+                <div class="shop-chat-profile pe-2">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-chat-earth-day-specialist-icon-202404_AV4?wid=35&hei=35&fmt=jpeg&qlt=95&.v=1711501362436"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="shop-chat-container">
+                  <div class="shop-chat-title">Need shopping help?</div>
+                  <div class="shop-chat-content">
+                    <a
+                      class="text-decoration-none"
+                      href=""
+                      style="font-size: 12px"
+                      >Ask a Specialist</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shop-neareststore d-flex">
+                <div class="shop-neareststore-profile pe-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-geo-alt"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                    />
+                  </svg>
+                </div>
+                <div class="shop-neareststore-container">
+                  <div class="shop-neareststore-title">
+                    Visit an Apple Store
+                  </div>
+                  <div class="shop-neareststore-content">
+                    <a
+                      class="text-decoration-none"
+                      href=""
+                      style="font-size: 12px"
+                      >Find one near your ></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- start cardshelf 1  -->
+      <div class="cardshelf" style="padding-bottom: 54px">
+        <div class="shelf-card">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="card-container-category">
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-mac-nav-202310.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Mac</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-iphone-nav-202309_GEO_US.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">iPhone</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-ipad-nav-202210.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">iPad</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-watch-nav-202309.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Apple Watch</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-vision-pro-nav-202401.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Vision Pro</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-airpods-nav-202209.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">AirPods</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-airtags-nav-202108.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">AirTag</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-appletv-nav-202210.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Apple TV 4K</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-homepod-nav-202301.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">HomePod</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-accessories-nav-202403.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Accessories</p>
+                </div>
+              </div>
+              <div class="swiper-slide category-card" id="cardTemplate">
+                <div class="rounded-4 border-0">
+                  <img
+                    src="../../assets/images/storepage/store-card-13-holiday-giftcards-asit-agc-nav-202111.png"
+                    class="card-img"
+                    alt="store-card-40-iphone-15-pro"
+                  />
+
+                  <p class="text-center mt-3">Apple Gift Card</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf 1  -->
+
+      <!-- start cardshelf 2  -->
+      <div class="shop-container pb-5">
+        <div class="cardshelf">
+          <div class="shelf2">
+            <div class="row shelf-title g-0">
+              <div class="col-10 my-4 g-0">
+                <h2 class="shop-header-sm d-inline">The latest.</h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Take a look at what's new, right now.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-latestProduct">
+                  <div
+                    class="swiper-slide latest-product-card"
+                    id="cardTemplate"
+                  >
+                    <div
+                      class="card text-bg-dark rounded-4 overflow-hidden product-card"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/shelf2/store-card-40-iphone-15-pro-202309.jfif"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-light">
+                          <small>IPHONE 15 PRO</small>
+                        </h6>
+                        <a class="product-link-light"> Titanium </a>
+                        <p class="product-price">
+                          From $999 or $41.62/mo. for 24 mo.<sup>*</sup>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf 2  -->
+
+      <!-- start cardshelf 3 Accessories -->
+      <div class="shop-container pb-5">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline" style="color: #ff3c26">
+                  The Accessories.
+                </h2>
+                <span class="shop-subhead-sm d-inline"
+                  >All kinds of Mother’s Day gifts for all kinds of moms.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-accessories">
+                  <div
+                    class="swiper-slide latest-product-card"
+                    id="cardTemplate"
+                  >
+                    <div
+                      class="card rounded-4 overflow-hidden product-card border-0 shadow"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/shelf3/store-card-40-mothers-day-202404.jpeg"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-dark">
+                          <small>MOTHER'S DAY</small>
+                        </h6>
+                        <a class="product-link-dark">Perfect Components.</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf 3 Accessories -->
+
+      <!-- start cardshelf Personalization -->
+      <div class="shop-container pb-5">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline" style="color: #ff3c26">
+                  Personalization.
+                </h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Add a little reminder of your love.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-personalization">
+                  <div
+                    class="swiper-slide latest-product-card"
+                    id="cardTemplate"
+                  >
+                    <div
+                      class="card rounded-4 overflow-hidden product-card border-0 shadow"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/personalization/store-card-40-mothers-day-personalization-202404_GEO_US.jpeg"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-dark">
+                          <small>FREE ENGRAVING</small>
+                        </h6>
+                        <a class="product-link-dark"
+                          >Make it uniquely theirs.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf Personalization -->
+
+      <!-- start cardshelf message card -->
+      <div class="shop-container pb-5">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline" style="color: #ff3c26">
+                  The Apple Store difference.
+                </h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Even more reasons to shop with us.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-message">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf  message card -->
+
+      <!-- start cardshelf Help  -->
+      <div class="shop-container">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline">Help is here.</h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Whenever and however you need it.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-help">
+                  <div class="swiper-slide card-store-help" id="cardTemplate">
+                    <div
+                      class="card rounded-4 overflow-hidden product-card border-0 shadow"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/helpSlelf/store-card-50-earth-day-specialist-help-202404.jpeg"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-dark text-uppercase">
+                          <small>apple specialist</small>
+                        </h6>
+                        <a class="product-link-dark"
+                          >Shop one on one with a Specialist. Online or in a
+                          store.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf Help  -->
+
+      <!-- start cardshelf Apple Experience -->
+      <div class="shop-container">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline">The Apple experience.</h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Do even more with Apple products and services.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-appleExperience">
+                  <div
+                    class="swiper-slide card-store-appleExperience"
+                    id="cardTemplate"
+                  >
+                    <div
+                      class="card rounded-4 overflow-hidden product-card border-0 shadow"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/apple-experience/store-card-50-tv-services-202404.jpeg"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-light text-uppercase">
+                          <small>apple tv+</small>
+                        </h6>
+                        <a class="product-link-light"
+                          >Get 3 months of Apple TV+ free when you buy an Apple
+                          device.°</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf Apple Experience -->
+
+      <!-- start cardshelf Special Stores -->
+      <div class="shop-container">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline">Special Stores.</h2>
+                <span class="shop-subhead-sm d-inline"
+                  >Exclusive savings for education, businesses, and more.</span
+                >
+              </div>
+            </div>
+
+            <div class="shelf-card">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="card-container-specialStore">
+                  <div
+                    class="swiper-slide card-store-specialStore"
+                    id="cardTemplate"
+                  >
+                    <div
+                      class="card rounded-4 overflow-hidden product-card border-0 shadow"
+                    >
+                      <img
+                        src="../../assets/images/storepage/find-store/special-store/iphone-card-50-carriertrade-202309.jpeg"
+                        class="card-img"
+                        alt="store-card-40-iphone-15-pro"
+                      />
+                      <div class="card-img-overlay p-4">
+                        <h6 class="product-title-dark text-uppercase">
+                          <small>carrier trade-in deals</small>
+                        </h6>
+                        <a class="product-link-dark"
+                          >iPhone carrier deals. <br />
+                          Right here at Apple. <br />
+                          For as low as $0.<sup>1</sup></a
+                        >
+                        <p class="product-price mt-2">
+                          Includes trade-in and carrier credits.<br />
+                          AT&T: up to $1000. T-Mobile: up to $800.
+                          <br />Verizon: up to $830.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf Special Stores-->
+
+      <!-- start cardshelf Link -->
+      <div class="shop-container">
+        <div class="cardshelf">
+          <div class="shelf3">
+            <div class="row g-0 shelf-title">
+              <div class="col-10 my-4">
+                <h2 class="shop-header-sm d-inline">Quick Links</h2>
+                <div class="group-link mt-3">
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark text-dark rounded-pill px-3 quick-link"
+                    style="font-size: 14px"
+                    >Order Status</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark text-dark rounded-pill px-3 quick-link"
+                    style="font-size: 14px"
+                    >Shopping Help</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark text-dark rounded-pill px-3 quick-link"
+                    style="font-size: 14px"
+                    >Returns</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark text-dark rounded-pill px-3 quick-link"
+                    style="font-size: 14px"
+                    >Your Saves</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cardshelf Link -->
+    </div>
+
+    <!-- start footer  -->
+    <!-- <footer></footer> -->
+    <my-footer></my-footer>
+    <!-- end footer  -->
+
+    <!-- Bootstrap link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/store/latest-shop.js"></script>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
+  </body>
+</html>

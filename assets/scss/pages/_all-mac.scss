@@ -1,0 +1,405 @@
+@use "../util" as u;
+@use "../global" as g;
+
+@mixin brand-heading {
+  margin-inline-start: auto !important;
+  margin-inline-end: auto !important;
+  width: 87.5vw;
+  max-width: 1680px;
+  padding-bottom: 80px;
+}
+
+.brand-heading {
+  @include brand-heading;
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 28px;
+    margin-top: -10px;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  h1 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    @include u.breakpoint(xlarge) {
+      font-size: 28px;
+    }
+  }
+}
+
+// ============== Start All Mac Page ==============
+.chapternav {
+  background-color: var(--nav-background-opened-light);
+  padding: 24px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 9987;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .chapternav-wrapper {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .chapternav-items {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+
+    .chapternav-item {
+      // flex: 1;
+      text-align: center;
+    }
+    .chapternav-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+  }
+
+  img {
+    width: 75px;
+    height: 56px;
+    margin: 0 auto 6px;
+  }
+
+  .chapternav-item {
+    a {
+      text-align: center;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 1.2em;
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+    }
+
+    .chapternav-new {
+      color: rgb(182, 68, 0);
+      font-weight: 600;
+    }
+  }
+}
+.promotion-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f5f5f7;
+  padding: 9px 0;
+  @include g.small-text();
+  text-align: center;
+
+  .promotion-content {
+    margin: 0 100px;
+    max-width: 100rem;
+    display: flex;
+    // flex-flow: row wrap;
+  }
+
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+//  Mac Video Display
+.mac-video-display {
+  padding-top: 90px;
+  margin: 0 auto;
+
+  .mac-video-container {
+    height: 80vh;
+    min-height: 680px;
+    max-width: 1920px;
+    max-height: 1260px;
+    width: calc(100% - 150px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    position: relative;
+    overflow: hidden;
+
+    .mac-watch-video {
+      overflow: hidden;
+      position: relative;
+
+      video {
+        object-fit: cover;
+        min-width: 100%;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+/*---------------------------------------
+Get to know Mac
+---------------------------------------*/
+
+.swiper-wrapper {
+  height: 10vh;
+}
+
+.get-to-know-mac {
+  padding: 150px 0;
+  .brand-heading {
+    @include brand-heading;
+    h1 {
+      @include g.headline-large(--headline-text-dark);
+    }
+  }
+
+  .mac-info-card-container, .ipad-info-card-container{
+    .swiper-wrapper {
+      margin-inline-start: auto;
+      padding-left: 5rem;
+      @include u.breakpoint(xlarge) {
+        padding-left: 20rem;
+      }
+    }
+  }
+
+  .card-getToknowMac, .card-getToknowiPad {
+    width: 405px !important;
+    height: 650px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px !important;
+  width: 50px !important;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #e3e3e3;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  color: #000 !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #cfcfcf;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "<"; /* Use icons or text for the buttons */
+  font-size: 14px !important;
+}
+
+/*---------------------------------------
+Explore line up
+---------------------------------------*/
+.explore-line-up {
+  padding-top: 150px;
+  background-color: var(--nav-background-opened-light);
+
+  .brand-heading {
+    @include brand-heading;
+
+    h1 {
+      @include g.headline-large(--headline-text-dark);
+    }
+
+    a {
+      color: var(--text-link);
+    }
+  }
+
+  .explores__tab-container {
+    display: flex;
+    border-radius: 32px;
+    margin-inline-start: auto !important;
+    margin-inline-end: auto !important;
+    max-width: 1680px;
+    
+    @include u.breakpoint-down(xsmall) {
+      padding-left: 30px;
+    }
+
+    @media screen and (max-width: 1925px) {
+      padding-left: 50px;
+    }
+  }
+
+  .explores__tab {
+    padding: 7px 25px;
+    border-radius: 32px;
+  }
+
+  .explore__content {
+    display: none;
+  }
+
+  .explores__tab--active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .explores__content {
+    display: none;
+    margin-top: 80px;
+    @include brand-heading;
+  }
+
+  .product-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .explores__content--active {
+    display: block;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+
+    .product-img {
+      width: 354px;
+      max-height: 190px;
+      height: 100%;
+    }
+  }
+
+  .top-block {
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 20px;
+  }
+
+  .colorsOpt {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .colors-circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.48),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.02)
+      );
+
+      &.color-dark {
+        background-color: #2e3642;
+      }
+
+      &.color-starlight {
+        background-color: #f0e4d3;
+      }
+
+      &.color-spaceGray {
+        background-color: #7d7e80;
+      }
+
+      &.color-spaceGray {
+        background-color: #e3e4e5;
+      }
+    }
+  }
+
+  .model-status {
+    @include g.semiBold-fw(12px);
+    color: rgb(182, 68, 0);
+  }
+
+  .model-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .model-chip,
+    .model-price {
+      @include g.semiBold-fw(17px);
+    }
+    .model-description {
+      font-size: 17px;
+      width: 250px;
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-content {
+    p {
+      font-size: 12px;
+    }
+
+    .block-content {
+      margin: 40px 0;
+      max-width: 280px;
+    }
+  }
+}
+
+/*---------------------------------------
+Best place to buy Mac
+---------------------------------------*/
+#card-container-message {
+  padding-left: 5rem;
+  @include u.breakpoint(xlarge) {
+    padding-left: 20rem;
+  }
+
+  .message-product-card {
+    width: 405px !important;
+    height: 850px;
+
+    .msg-content {
+      width: 300px;
+    }
+  }
+}
+
+
+// ============== End All Mac Page ==============
