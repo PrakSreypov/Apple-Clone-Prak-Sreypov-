@@ -178,9 +178,9 @@ Get to know Mac
   .mac-info-card-container, .ipad-info-card-container{
     .swiper-wrapper {
       margin-inline-start: auto;
-      padding-left: 5rem;
+      padding-left: 30px;
       @include u.breakpoint(xlarge) {
-        padding-left: 20rem;
+        padding-left: 27rem;
       }
     }
   }
@@ -231,6 +231,7 @@ Explore line up
 
     h1 {
       @include g.headline-large(--headline-text-dark);
+      
     }
 
     a {
@@ -386,9 +387,9 @@ Explore line up
 Best place to buy Mac
 ---------------------------------------*/
 #card-container-message {
-  padding-left: 5rem;
+  padding-left: 30px;
   @include u.breakpoint(xlarge) {
-    padding-left: 20rem;
+    padding-left: 25rem;
   }
 
   .message-product-card {

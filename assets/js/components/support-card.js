@@ -1,15 +1,10 @@
 class SupportCard extends HTMLElement {
-
   connectedCallback() {
-
-    
-
     const headingTitle = this.getAttribute('heading-title');
     const des = this.getAttribute('des');
     const link = this.getAttribute('link');
     const linkIcon = this.getAttribute('linkIcon');
     const img = this.getAttribute('img');
-
 
     // Check if the image attribute is empty and conditionally render the image div
     let imgHTML = '';

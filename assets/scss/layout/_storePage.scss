@@ -3,7 +3,6 @@
 
 .promotion-banner {
   @include g.regular-fw(14px);
-  
 }
 
 .store-location-slider {
@@ -17,6 +16,20 @@
 }
 .page-heading {
   padding: 90px;
+
+  @include u.breakpoint-down(small){
+    display: block;
+    padding: 20px
+  }
+}
+
+.page-heading-container {
+  display: flex;
+  justify-content: space-between;
+
+  @include u.breakpoint-down(small){
+    display: block;
+  }
 }
 
 .shop-header {
@@ -29,10 +42,26 @@
 
 .shop-contact {
   font-size: 14px;
+
+  @include u.breakpoint-down(small){
+    margin-top: 20px;
+  }
 }
 
 .shelf-title {
-  margin-left: 140px !important;
+  margin-left: 150px !important;
+
+  @include u.breakpoint-down(small){
+    margin-left: 30px !important;
+  }
+}
+
+.swiper .swipper-padding {
+  padding-left: 150px;
+
+  @include u.breakpoint-down(small){
+    padding-left: 30px;
+  }
 }
 
 .category-card {
@@ -46,9 +75,9 @@
   padding: 18px 8px 16px;
 
   img {
-  width: auto;
-  max-height: 78px;
-  // margin: 0 auto;
+    width: auto;
+    max-height: 78px;
+    // margin: 0 auto;
   }
 
   p {
@@ -74,16 +103,17 @@ Shefl2
   }
 }
 
-
-.latest-product-card , .card-store-specialStore{
+.latest-product-card,
+.card-store-specialStore {
   width: 400px !important;
 }
 
-.accessories-product-card , .personalization-product-card{
+.accessories-product-card,
+.personalization-product-card {
   width: 300px !important;
 }
 
-.message-product-card{
+.message-product-card {
   width: 300px !important;
   height: 16rem !important;
   .product-card {
@@ -102,7 +132,7 @@ Shefl2
     object-fit: cover;
   }
 
-  .product-title-light{
+  .product-title-light {
     color: #fff !important;
   }
 
@@ -120,11 +150,16 @@ Shefl2
     line-height: 1.2;
   }
 
+  p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
   .product-price {
     font-size: 17px;
     font-weight: 400;
 
-    &.light{
+    &.light {
       color: #fff !important;
     }
     b {
@@ -139,7 +174,8 @@ Shefl2
   }
 }
 
-.card-store-help ,.card-store-appleExperience{
+.card-store-help,
+.card-store-appleExperience {
   width: 480px !important;
 }
 
@@ -296,7 +332,6 @@ Shefl2
     padding: 30px;
   }
 }
-
 
 .test {
   @include u.breakpoint-down(medium) {

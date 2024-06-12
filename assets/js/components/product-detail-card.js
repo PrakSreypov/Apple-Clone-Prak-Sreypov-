@@ -1,6 +1,8 @@
+// Import data 
 import {MacLaptops, MacDesktops, MacDisplay} from '../data/all-mac-data.js';
 import {Ipad} from '../data/ipad-data.js'
 
+// Declare data sources 
 const dataSources = {
   'mac-laptop': MacLaptops,
   'mac-desktop': MacDesktops,
@@ -8,12 +10,11 @@ const dataSources = {
   'ipad': Ipad
 }
 
+// Function for create product card container 
 const ProductCardContainer = (contents) => {
-  
   return `
   <div class="product-container">
-  ${contents.map((content) => `
-        
+  ${contents.map((content) => `      
         <div class="product-card">
           <img
             class="product-img"

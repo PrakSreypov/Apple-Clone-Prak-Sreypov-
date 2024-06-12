@@ -1,4 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function () {
+// Latest Product Data 
 const latestProductData = [
   {
     image:
@@ -104,6 +104,7 @@ const latestProductData = [
   },
 ];
 
+// Accessories data 
 const accessoriesData = [
   {
     image:
@@ -302,6 +303,7 @@ const accessoriesData = [
   },
 ];
 
+// Personalization Data 
 const personalizationData = [
   {
     image:
@@ -500,6 +502,7 @@ const personalizationData = [
   },
 ];
 
+// Help Data 
 const helpData = [
   {
     image:
@@ -545,6 +548,7 @@ const helpData = [
   },
 ];
 
+// Apple Experience Data 
 const appleExperienceData = [
   {
     image:
@@ -591,6 +595,7 @@ const appleExperienceData = [
   },
 ];
 
+// Special Store Data 
 const specialStoreData = [
   {
     image:
@@ -648,6 +653,7 @@ const specialStoreData = [
   },
 ];
 
+// Message Data 
 const msgData = [
   {
     svgLink: `
@@ -771,26 +777,15 @@ const msgData = [
 
 ];
 
-const latestCardContainer = document.getElementById(
-  "card-container-latestProduct"
-);
-
-const accessoriesCardContainer = document.getElementById(
-  "card-container-accessories"
-);
-
-const personalizationCardContainer = document.getElementById(
-  "card-container-personalization"
-);
-
+// Get Id to create product cards 
+const latestCardContainer = document.getElementById("card-container-latestProduct");
+const accessoriesCardContainer = document.getElementById("card-container-accessories");
+const personalizationCardContainer = document.getElementById("card-container-personalization");
 const helpCardContainer = document.getElementById("card-container-help");
-const appleExperienceCardContainer = document.getElementById(
-  "card-container-appleExperience"
-);
-const specialStoreCardContainer = document.getElementById(
-  "card-container-specialStore"
-);
+const appleExperienceCardContainer = document.getElementById("card-container-appleExperience");
+const specialStoreCardContainer = document.getElementById("card-container-specialStore");
 
+// Function for creating card components
 function productColorOptCard(container, cardClass, data) {
   data.forEach((item) => {
     const card = document.createElement("div");
@@ -825,6 +820,7 @@ function productColorOptCard(container, cardClass, data) {
   });
 }
 
+// Display the function 
 productColorOptCard(
   accessoriesCardContainer,
   "accessories-product-card",
@@ -837,6 +833,7 @@ productColorOptCard(
   personalizationData
 );
 
+// Function for creating message card 
 function messageCard(data) {
   const cardContainer = document.getElementById("card-container-message");
 
@@ -857,26 +854,25 @@ function messageCard(data) {
   });
 }
 
+// Display the function 
 messageCard(msgData);
 
+// function for creating manipulation card 
 function manipulationCards(container, cardClass, data) {
   data.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("swiper-slide");
     card.classList.add(cardClass);
 
-    // Add the specified text color class to the card element
-    // card.classList.add(item.textColorClass);
-
     card.innerHTML = `
-  <div class="card rounded-4 overflow-hidden product-card border-0 shadow">
-  <img src="${item.image}" class="card-img" alt="${item.alt}">
-  <div class="card-img-overlay p-4">
-  <h6 class="product-title-${item.textColor} text-uppercase"><small>${item.title}</small></h6>
-  <a class="product-link-${item.textColor}">${item.link}</a>
-  <p class="product-price ${item.textColor} mt-2">${item.price}<sup>${item.symbol}</sup></p>
-  </div>
-  </div>
+      <div class="card rounded-4 overflow-hidden product-card border-0 shadow">
+        <img src="${item.image}" class="card-img" alt="${item.alt}">
+        <div class="card-img-overlay p-4">
+          <h6 class="product-title-${item.textColor} text-uppercase"><small>${item.title}</small></h6>
+          <a class="product-link-${item.textColor}">${item.link}</a>
+          <p class="product-price ${item.textColor} mt-2">${item.price}<sup>${item.symbol}</sup></p>
+        </div>
+      </div>
   `;
 
     container.appendChild(card);
@@ -901,13 +897,14 @@ manipulationCards(
   specialStoreData
 );
 
+
+// Customize swiper for carousel 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 20,
-  slidesOffsetBefore: 140,
+  // slidesOffsetBefore: 140,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // mousewheel: true,
 });

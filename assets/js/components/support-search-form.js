@@ -31,6 +31,7 @@ class SupportSearchForm extends HTMLElement {
 
 customElements.define('support-search-form', SupportSearchForm);
 
+// Show or hide search contents 
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search-input');
   const searchContent = document.getElementById('search-content');

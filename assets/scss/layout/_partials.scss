@@ -6,7 +6,6 @@ navbar
 nav {
   background-color: var(--nav-background-light);
   width: 100%;
-  min-width: 320px;
   height: 48px;
   max-height: 44px;
   position: relative;
@@ -48,36 +47,46 @@ nav {
   }
 
   @media only screen and (max-width: 991px) {
-    nav {
-      background-color: #fff;
+    .nav-item {
+      width: 100%;
     }
-    .nav-link {
+
+    .apple-logo svg{
+      width: 19px;
+      height: 19px;
+    }
+
+    .dropdown {
       display: none;
     }
 
-    .nav-logo,
-    .nav-icon-sm {
-      margin: 0 16px;
-      display: flex !important;
-      justify-content: space-between;
-      align-items: center;
-
-      svg {
-        height: 18px;
-        width: 18px;
-      }
-
-      .menu-icon {
-        height: 35px !important;
-        width: 35px !important;
-      }
-    }
-
-    .left-icon-mobile {
+    .nav-logo {
       display: flex;
       justify-content: space-between;
-      gap: 3px;
-    }
+
+      .left-icon-mobile {
+        display: flex;
+        justify-content: space-between;
+        gap: 3px;
+
+        .nav-icon-sm {
+          margin: 0 16px;
+          display: flex !important;
+          justify-content: space-between;
+          align-items: center;
+
+          svg {
+            height: 17px;
+            width: 17px;
+          }
+
+          .menu-icon {
+            height: 35px !important;
+            width: 35px !important;
+          }
+        }
+      }
+    }      
   }
 
   .dropdown-menu {
@@ -90,13 +99,9 @@ nav {
     height: 40vh;
     margin-top: 0;
     z-index: 1000;
-    // display: block;
-    // background-color: gray;
-    // display: block;
     height: auto;
     margin-inline-start: auto;
     margin-inline-end: auto;
-    // max-width: 1024px;
     width: 100%;
 
     .dropdown-menu-container {
@@ -231,10 +236,6 @@ footer {
         background-color: #000;
       }
 
-      // @include u.breakpoint-down(xmedium) {
-      //   display: flex;
-      //   background-color: #000 !important;
-      // }
     }
   }
 

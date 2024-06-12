@@ -1,3 +1,4 @@
+// Creating Footer component 
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -47,7 +48,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -147,7 +148,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -249,7 +250,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -349,7 +350,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -451,7 +452,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -551,7 +552,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -653,7 +654,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -753,7 +754,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -855,7 +856,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -955,7 +956,7 @@ class Footer extends HTMLElement {
                               width="16"
                               height="16"
                               viewBox="0 0 24 24"
-                              style="fill: rgb(134, 133, 133)"
+                              fill = #808080
                             >
                               <path
                                 d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -1056,7 +1057,7 @@ class Footer extends HTMLElement {
                             width="16"
                             height="16"
                             viewBox="0 0 24 24"
-                            style="fill: rgb(134, 133, 133)"
+                            fill = #808080
                           >
                             <path
                               d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"
@@ -1190,8 +1191,8 @@ class Footer extends HTMLElement {
 }
 customElements.define("my-footer", Footer);
 
+// Display footer menu for responsive size 
 const optionMenus = document.querySelectorAll(".footer--item");
-
 optionMenus.forEach((optionMenu) => {
   const selectBtn = optionMenu.querySelector(".footer--item-btn");
   const options = optionMenu.querySelectorAll(".footer--sub-item");

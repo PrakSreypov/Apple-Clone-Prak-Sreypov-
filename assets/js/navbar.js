@@ -8,7 +8,7 @@ class Navbar extends HTMLElement {
         <ul class="nav-items">
           <li class="nav-item">
             <a class="nav-logo nav-link" href="/index.html">
-              <span class="">
+              <span class="apple-logo">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"

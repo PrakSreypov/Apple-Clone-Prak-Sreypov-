@@ -1,3 +1,4 @@
+// Get Id for creating card 
 const MacInfoContainer = document.getElementById(
   "card-container-getToknowMac"
 );
@@ -5,8 +6,7 @@ const IpadInfoContainer = document.getElementById(
   "card-container-getToknowIpad"
 );
 
-console.log(IpadInfoContainer)
-
+// Get to know mac Data 
 const getToknowMacData = [
   {
     image:
@@ -75,14 +75,12 @@ const getToknowMacData = [
   
 ];
 
+// Function for create Mac Info 
 function macInfoContainer(container, cardClass, data) {
   data.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("swiper-slide");
     card.classList.add(cardClass);
-
-    // Add the specified text color class to the card element
-    // card.classList.add(item.textColorClass);
 
     card.innerHTML = `
       <div class="card rounded-4 overflow-hidden product-card border-0 shadow" style="height: 600px; width: 350px">
@@ -98,16 +96,17 @@ function macInfoContainer(container, cardClass, data) {
   });
 }
 
-
+// Call the function 
 macInfoContainer(
   MacInfoContainer,
   "card-getToknowMac",
   getToknowMacData
 );
 
-
+// Customize the swiper for carousel 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
+  spaceBetween: 20,
   // slidesOffsetBefore: 300,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -115,7 +114,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
+// Message Data 
 const msgData = [
 
   {
@@ -164,7 +163,7 @@ const msgData = [
 
 ];
 
-
+// Function for creating Message card 
 function messageCard(data) {
   const cardContainer = document.getElementById("card-container-message");
 
@@ -188,8 +187,10 @@ function messageCard(data) {
   });
 }
 
+// Call the fuction 
 messageCard(msgData);
 
+// Button Tab to show different products 
 const tabs = document.querySelectorAll('.explores__tab');
 const tabsContainer = document.querySelector('.explores__tab-container');
 const tabsContent = document.querySelectorAll('.explores__content');
